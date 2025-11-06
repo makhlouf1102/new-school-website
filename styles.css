@@ -39,3 +39,14 @@ html {
 html {
     scroll-padding-top: 80px;
 }
+
+/* Fix stats overflow issue */
+.stats {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.stat {
+    min-width: 0;
+    flex-shrink: 1;
+}
