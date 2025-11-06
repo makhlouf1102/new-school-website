@@ -1,265 +1,458 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="sunset">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship Pathways Agency</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
-</head>
-<body class="min-h-screen">
-    <header class="sticky top-0 z-50 bg-base-100 shadow">
-        <nav class="navbar mx-auto max-w-6xl">
-            <div class="navbar-start">
-                <a class="btn btn-ghost text-2xl font-bold" href="#home">Internship Ally</a>
-            </div>
-            <div class="navbar-center hidden space-x-2 lg:flex">
-                <a class="btn btn-ghost" href="#about">About</a>
-                <a class="btn btn-ghost" href="#services">Services</a>
-                <a class="btn btn-ghost" href="#reviews">Reviews</a>
-                <a class="btn btn-ghost" href="#faq">FAQ</a>
-                <a class="btn btn-ghost" href="#contact">Contact</a>
-            </div>
-            <div class="navbar-end">
-                <a class="btn btn-primary" href="https://calendly.com/" target="_blank" rel="noopener">Book a Call</a>
-            </div>
-        </nav>
-    </header>
-
-    <main id="home">
-        <section class="hero bg-base-200">
-            <div class="hero-content flex-col-reverse gap-12 lg:flex-row">
-                <div class="text-center lg:text-left">
-                    <p class="badge badge-secondary mb-4">Internship Placement Experts</p>
-                    <h1 class="text-4xl font-bold lg:text-5xl">Launch Your Career with Tailored Internship Opportunities</h1>
-                    <p class="mt-6 text-lg leading-relaxed">We match driven students and career changers with the internships that unlock their potential. Let our dedicated team guide you every step of the way.</p>
-                    <div class="mt-8 flex flex-col gap-4 sm:flex-row">
-                        <a class="btn btn-primary" href="https://calendly.com/" target="_blank" rel="noopener">Book a Call</a>
-                        <a class="btn btn-outline" href="#services">Explore Services</a>
-                    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Internship Pathways Agency</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="min-h-screen" id="header">
+        <header class="sticky top-0 z-50 bg-base-100 shadow">
+            <nav class="navbar mx-auto max-w-6xl">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-2xl font-bold" href="#header"
+                        >Internship Ally</a
+                    >
                 </div>
-                <div class="w-full max-w-md">
-                    <img src="https://placehold.co/800x600" alt="Students collaborating" class="rounded-xl shadow-2xl" />
+                <div class="navbar-center hidden space-x-2 lg:flex">
+                    <a class="btn btn-ghost" href="#about">About</a>
+                    <a class="btn btn-ghost" href="#services">Services</a>
+                    <a class="btn btn-ghost" href="#reviews">Reviews</a>
+                    <a class="btn btn-ghost" href="#faq">FAQ</a>
+                    <a class="btn btn-ghost" href="#contact">Contact</a>
                 </div>
-            </div>
-        </section>
+                <div class="navbar-end">
+                    <a
+                        class="btn btn-primary"
+                        href="https://calendly.com/"
+                        target="_blank"
+                        rel="noopener"
+                        >Book a Call</a
+                    >
+                </div>
+            </nav>
+        </header>
 
-        <section id="about" class="bg-base-100 py-20">
-            <div class="mx-auto max-w-6xl px-6">
-                <div class="grid gap-12 lg:grid-cols-2">
-                    <div>
-                        <h2 class="text-3xl font-bold">About Internship Ally</h2>
-                        <p class="mt-6 text-lg leading-relaxed">Internship Ally is a boutique service agency dedicated to connecting aspiring professionals with internships that accelerate their growth. From crafting standout applications to interview coaching, we partner with you to secure opportunities that align with your goals.</p>
-                    </div>
-                    <div class="stats stats-vertical shadow lg:stats-horizontal">
-                        <div class="stat">
-                            <div class="stat-title">Internships Secured</div>
-                            <div class="stat-value">250+</div>
-                            <div class="stat-desc">Across 15 industries</div>
-                        </div>
-
-                        <div class="stat">
-                            <div class="stat-title">Partner Companies</div>
-                            <div class="stat-value">120</div>
-                            <div class="stat-desc">Worldwide network</div>
-                        </div>
-
-                        <div class="stat">
-                            <div class="stat-title">Success Rate</div>
-                            <div class="stat-value">92%</div>
-                            <div class="stat-desc">Offers after coaching</div>
+        <main id="home">
+            <section class="hero bg-base-200">
+                <div class="hero-content flex-col-reverse gap-12 lg:flex-row">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-4xl font-bold lg:text-5xl">
+                            Launch Your Career with Tailored Internship
+                            Opportunities
+                        </h1>
+                        <p class="mt-6 text-lg leading-relaxed">
+                            We match driven students and career changers with
+                            the internships that unlock their potential. Let our
+                            dedicated team guide you every step of the way.
+                        </p>
+                        <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                            <a
+                                class="btn btn-primary"
+                                href="https://calendly.com/"
+                                target="_blank"
+                                rel="noopener"
+                                >Book a Call</a
+                            >
+                            <a class="btn btn-outline" href="#services"
+                                >Explore Services</a
+                            >
                         </div>
                     </div>
+                    <div class="w-full max-w-md">
+                        <img
+                            src="https://placehold.co/800x600"
+                            alt="Students collaborating"
+                            class="rounded-xl shadow-2xl"
+                        />
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="services" class="bg-base-200 py-20">
-            <div class="mx-auto max-w-6xl px-6">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold">Our Services</h2>
-                    <p class="mt-4 text-lg">Tailored support packages designed to meet you where you are in your career journey.</p>
-                </div>
-                <div class="mt-12 space-y-12">
-                    <div class="card card-side flex-col bg-base-100 shadow-xl lg:flex-row">
-                        <figure class="max-h-80 w-full lg:w-1/2"><img src="https://placehold.co/500x320" alt="Service one" class="h-full w-full object-cover" /></figure>
-                        <div class="card-body lg:w-1/2">
-                            <h3 class="card-title">Service One</h3>
-                            <p>Describe the first service offering here. Highlight the benefits and the outcomes clients can expect.</p>
-                            <div class="card-actions justify-end">
-                                <a class="btn btn-outline" href="#contact">Learn More</a>
+            <section id="about" class="bg-base-100 py-20">
+                <div class="mx-auto max-w-6xl px-6">
+                    <div class="grid gap-12 lg:grid-cols-2">
+                        <div>
+                            <h2 class="text-3xl font-bold">
+                                About Internship Ally
+                            </h2>
+                            <p class="mt-6 text-lg leading-relaxed">
+                                Internship Ally is a boutique service agency
+                                dedicated to connecting aspiring professionals
+                                with internships that accelerate their growth.
+                                From crafting standout applications to interview
+                                coaching, we partner with you to secure
+                                opportunities that align with your goals.
+                            </p>
+                        </div>
+                        <div
+                            class="stats stats-vertical shadow lg:stats-horizontal"
+                        >
+                            <div class="stat">
+                                <div class="stat-title">
+                                    Internships Secured
+                                </div>
+                                <div class="stat-value">250+</div>
+                                <div class="stat-desc">
+                                    Across 15 industries
+                                </div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat-title">Partner Companies</div>
+                                <div class="stat-value">120</div>
+                                <div class="stat-desc">Worldwide network</div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat-title">Success Rate</div>
+                                <div class="stat-value">92%</div>
+                                <div class="stat-desc">
+                                    Offers after coaching
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card card-side flex-col bg-base-100 shadow-xl lg:flex-row-reverse">
-                        <figure class="max-h-80 w-full lg:w-1/2"><img src="https://placehold.co/500x320" alt="Service two" class="h-full w-full object-cover" /></figure>
-                        <div class="card-body lg:w-1/2">
-                            <h3 class="card-title">Service Two</h3>
-                            <p>Describe the second service offering here. Focus on how it solves a specific problem for your clients.</p>
-                            <div class="card-actions justify-end">
-                                <a class="btn btn-outline" href="#contact">Learn More</a>
+                </div>
+            </section>
+
+            <section id="services" class="bg-base-200 py-20">
+                <div class="mx-auto max-w-6xl px-6">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold">Our Services</h2>
+                        <p class="mt-4 text-lg">
+                            Tailored support packages designed to meet you where
+                            you are in your career journey.
+                        </p>
+                    </div>
+                    <div class="mt-12 space-y-12">
+                        <div
+                            class="card card-side flex-col bg-base-100 shadow-xl lg:flex-row"
+                        >
+                            <figure class="max-h-80 w-full lg:w-1/2">
+                                <img
+                                    src="https://placehold.co/500x320"
+                                    alt="Service one"
+                                    class="h-full w-full object-cover"
+                                />
+                            </figure>
+                            <div class="card-body lg:w-1/2">
+                                <h3 class="card-title">Service One</h3>
+                                <p>
+                                    Describe the first service offering here.
+                                    Highlight the benefits and the outcomes
+                                    clients can expect.
+                                </p>
+                                <div class="card-actions justify-end">
+                                    <a class="btn btn-outline" href="#contact"
+                                        >Learn More</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="card card-side flex-col bg-base-100 shadow-xl lg:flex-row-reverse"
+                        >
+                            <figure class="max-h-80 w-full lg:w-1/2">
+                                <img
+                                    src="https://placehold.co/500x320"
+                                    alt="Service two"
+                                    class="h-full w-full object-cover"
+                                />
+                            </figure>
+                            <div class="card-body lg:w-1/2">
+                                <h3 class="card-title">Service Two</h3>
+                                <p>
+                                    Describe the second service offering here.
+                                    Focus on how it solves a specific problem
+                                    for your clients.
+                                </p>
+                                <div class="card-actions justify-end">
+                                    <a class="btn btn-outline" href="#contact"
+                                        >Learn More</a
+                                    >
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section id="reviews" class="bg-base-100 py-20">
+                <div class="mx-auto max-w-6xl px-6">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold">
+                            Reviews from Previous Clients
+                        </h2>
+                        <p class="mt-4 text-lg">
+                            Hear from the professionals who found their dream
+                            internships with us.
+                        </p>
+                    </div>
+                    <div class="mt-12 grid gap-8 md:grid-cols-2">
+                        <div class="card bg-base-200 shadow-lg">
+                            <div class="card-body">
+                                <p class="italic">
+                                    “Internship Ally guided me through every
+                                    step of the application process. I landed an
+                                    internship that turned into a full-time
+                                    offer!”
+                                </p>
+                                <div class="mt-4 font-semibold">
+                                    Alexandra T.
+                                </div>
+                                <div class="text-sm text-base-content/70">
+                                    Marketing Intern, BrightWave Media
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-200 shadow-lg">
+                            <div class="card-body">
+                                <p class="italic">
+                                    “The mock interviews and resume overhaul
+                                    were game changers. I never felt more
+                                    confident walking into interviews.”
+                                </p>
+                                <div class="mt-4 font-semibold">Jamal R.</div>
+                                <div class="text-sm text-base-content/70">
+                                    Software Intern, Apex Labs
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-200 shadow-lg">
+                            <div class="card-body">
+                                <p class="italic">
+                                    “Their employer connections opened doors I
+                                    didn’t even know existed. Highly recommend
+                                    to anyone serious about their career.”
+                                </p>
+                                <div class="mt-4 font-semibold">Priya N.</div>
+                                <div class="text-sm text-base-content/70">
+                                    Operations Intern, Forward Logistics
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-200 shadow-lg">
+                            <div class="card-body">
+                                <p class="italic">
+                                    “The personalized guidance made all the
+                                    difference. They helped me choose the right
+                                    internship track for my goals.”
+                                </p>
+                                <div class="mt-4 font-semibold">Diego L.</div>
+                                <div class="text-sm text-base-content/70">
+                                    Finance Intern, Summit Capital
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq" class="bg-base-200 py-20">
+                <div class="mx-auto max-w-4xl px-6">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold">
+                            Frequently Asked Questions
+                        </h2>
+                        <p class="mt-4 text-lg">
+                            Click a question to learn more about our process and
+                            services.
+                        </p>
+                    </div>
+                    <div class="mt-12 space-y-4">
+                        <div class="collapse collapse-plus bg-base-100">
+                            <input
+                                type="radio"
+                                name="faq-accordion"
+                                checked="checked"
+                            />
+                            <div class="collapse-title text-xl font-medium">
+                                How does the internship matching process work?
+                            </div>
+                            <div class="collapse-content">
+                                <p>
+                                    We start with a discovery call to understand
+                                    your goals, then connect you with curated
+                                    opportunities that align with your skills
+                                    and preferences.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-base-100">
+                            <input type="radio" name="faq-accordion" />
+                            <div class="collapse-title text-xl font-medium">
+                                Do you help with interview preparation?
+                            </div>
+                            <div class="collapse-content">
+                                <p>
+                                    Yes! We offer tailored interview coaching
+                                    sessions, mock interviews, and feedback to
+                                    ensure you stand out.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-base-100">
+                            <input type="radio" name="faq-accordion" />
+                            <div class="collapse-title text-xl font-medium">
+                                Can you support international internship
+                                searches?
+                            </div>
+                            <div class="collapse-content">
+                                <p>
+                                    Absolutely. Our global partner network helps
+                                    us match clients with international
+                                    experiences and guide visa requirements.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-base-100">
+                            <input type="radio" name="faq-accordion" />
+                            <div class="collapse-title text-xl font-medium">
+                                What is the timeline to get started?
+                            </div>
+                            <div class="collapse-content">
+                                <p>
+                                    After your introductory call, we create a
+                                    personalized plan within a week and begin
+                                    outreach immediately.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-primary text-primary-content">
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <div>
+                            <h2 class="text-3xl font-bold">
+                                Ready to Secure Your Next Internship?
+                            </h2>
+                            <p class="mt-4 text-lg">
+                                Schedule a complimentary consultation and let’s
+                                map out your success plan.
+                            </p>
+                        </div>
+                        <a
+                            class="btn btn-secondary"
+                            href="https://calendly.com/"
+                            target="_blank"
+                            rel="noopener"
+                            >Book a Call Now</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="bg-base-100 py-20">
+                <div class="mx-auto max-w-4xl px-6">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold">Contact Us</h2>
+                        <p class="mt-4 text-lg">
+                            Have questions? Reach out and we’ll respond within
+                            one business day.
+                        </p>
+                    </div>
+                    <form class="mt-12 space-y-6">
+                        <div class="form-control">
+                            <label class="label" for="name">
+                                <span class="label-text">Name</span>
+                            </label>
+                            <input
+                                id="name"
+                                type="text"
+                                placeholder="Your name"
+                                class="input input-bordered"
+                                required
+                            />
+                        </div>
+                        <div class="form-control">
+                            <label class="label" for="email">
+                                <span class="label-text">Email</span>
+                            </label>
+                            <input
+                                id="email"
+                                type="email"
+                                placeholder="you@example.com"
+                                class="input input-bordered"
+                                required
+                            />
+                        </div>
+                        <div class="form-control">
+                            <label class="label" for="message">
+                                <span class="label-text">How can we help?</span>
+                            </label>
+                            <textarea
+                                id="message"
+                                class="textarea textarea-bordered"
+                                rows="5"
+                                placeholder="Share your goals..."
+                                required
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-base-200">
+            <div
+                class="footer mx-auto max-w-6xl items-center justify-between px-6 py-10 text-base-content/80"
+            >
+                <aside>
+                    <a class="btn btn-ghost text-2xl font-bold" href="#header"
+                        >Internship Ally</a
+                    >
+                    <p>
+                        Empowering future professionals through meaningful
+                        internship experiences.
+                    </p>
+                </aside>
+                <nav class="grid gap-2">
+                    <a class="link link-hover" href="#services">Services</a>
+                    <a class="link link-hover" href="#reviews">Reviews</a>
+                    <a class="link link-hover" href="#faq">FAQ</a>
+                    <a class="link link-hover" href="#contact">Contact</a>
+                </nav>
+                <nav class="grid gap-2">
+                    <a
+                        class="link link-hover"
+                        href="mailto:hello@internshipally.com"
+                        >hello@internshipally.com</a
+                    >
+                    <a class="link link-hover" href="tel:+1234567890"
+                        >(123) 456-7890</a
+                    >
+                    <a
+                        class="link link-hover"
+                        href="https://calendly.com/"
+                        target="_blank"
+                        rel="noopener"
+                        >Book a Call</a
+                    >
+                </nav>
             </div>
-        </section>
-
-        <section id="reviews" class="bg-base-100 py-20">
-            <div class="mx-auto max-w-6xl px-6">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold">Reviews from Previous Clients</h2>
-                    <p class="mt-4 text-lg">Hear from the professionals who found their dream internships with us.</p>
-                </div>
-                <div class="mt-12 grid gap-8 md:grid-cols-2">
-                    <div class="card bg-base-200 shadow-lg">
-                        <div class="card-body">
-                            <p class="italic">“Internship Ally guided me through every step of the application process. I landed an internship that turned into a full-time offer!”</p>
-                            <div class="mt-4 font-semibold">Alexandra T.</div>
-                            <div class="text-sm text-base-content/70">Marketing Intern, BrightWave Media</div>
-                        </div>
-                    </div>
-                    <div class="card bg-base-200 shadow-lg">
-                        <div class="card-body">
-                            <p class="italic">“The mock interviews and resume overhaul were game changers. I never felt more confident walking into interviews.”</p>
-                            <div class="mt-4 font-semibold">Jamal R.</div>
-                            <div class="text-sm text-base-content/70">Software Intern, Apex Labs</div>
-                        </div>
-                    </div>
-                    <div class="card bg-base-200 shadow-lg">
-                        <div class="card-body">
-                            <p class="italic">“Their employer connections opened doors I didn’t even know existed. Highly recommend to anyone serious about their career.”</p>
-                            <div class="mt-4 font-semibold">Priya N.</div>
-                            <div class="text-sm text-base-content/70">Operations Intern, Forward Logistics</div>
-                        </div>
-                    </div>
-                    <div class="card bg-base-200 shadow-lg">
-                        <div class="card-body">
-                            <p class="italic">“The personalized guidance made all the difference. They helped me choose the right internship track for my goals.”</p>
-                            <div class="mt-4 font-semibold">Diego L.</div>
-                            <div class="text-sm text-base-content/70">Finance Intern, Summit Capital</div>
-                        </div>
-                    </div>
-                </div>
+            <div
+                class="bg-base-300 py-4 text-center text-sm text-base-content/60"
+            >
+                © <span id="year"></span> Internship Ally. All rights reserved.
             </div>
-        </section>
+        </footer>
 
-        <section id="faq" class="bg-base-200 py-20">
-            <div class="mx-auto max-w-4xl px-6">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold">Frequently Asked Questions</h2>
-                    <p class="mt-4 text-lg">Click a question to learn more about our process and services.</p>
-                </div>
-                <div class="mt-12 space-y-4">
-                    <div class="collapse collapse-plus bg-base-100">
-                        <input type="radio" name="faq-accordion" checked="checked" />
-                        <div class="collapse-title text-xl font-medium">
-                            How does the internship matching process work?
-                        </div>
-                        <div class="collapse-content">
-                            <p>We start with a discovery call to understand your goals, then connect you with curated opportunities that align with your skills and preferences.</p>
-                        </div>
-                    </div>
-                    <div class="collapse collapse-plus bg-base-100">
-                        <input type="radio" name="faq-accordion" />
-                        <div class="collapse-title text-xl font-medium">
-                            Do you help with interview preparation?
-                        </div>
-                        <div class="collapse-content">
-                            <p>Yes! We offer tailored interview coaching sessions, mock interviews, and feedback to ensure you stand out.</p>
-                        </div>
-                    </div>
-                    <div class="collapse collapse-plus bg-base-100">
-                        <input type="radio" name="faq-accordion" />
-                        <div class="collapse-title text-xl font-medium">
-                            Can you support international internship searches?
-                        </div>
-                        <div class="collapse-content">
-                            <p>Absolutely. Our global partner network helps us match clients with international experiences and guide visa requirements.</p>
-                        </div>
-                    </div>
-                    <div class="collapse collapse-plus bg-base-100">
-                        <input type="radio" name="faq-accordion" />
-                        <div class="collapse-title text-xl font-medium">
-                            What is the timeline to get started?
-                        </div>
-                        <div class="collapse-content">
-                            <p>After your introductory call, we create a personalized plan within a week and begin outreach immediately.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-primary text-primary-content">
-            <div class="hero">
-                <div class="hero-content flex-col lg:flex-row">
-                    <div>
-                        <h2 class="text-3xl font-bold">Ready to Secure Your Next Internship?</h2>
-                        <p class="mt-4 text-lg">Schedule a complimentary consultation and let’s map out your success plan.</p>
-                    </div>
-                    <a class="btn btn-secondary" href="https://calendly.com/" target="_blank" rel="noopener">Book a Call Now</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="bg-base-100 py-20">
-            <div class="mx-auto max-w-4xl px-6">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold">Contact Us</h2>
-                    <p class="mt-4 text-lg">Have questions? Reach out and we’ll respond within one business day.</p>
-                </div>
-                <form class="mt-12 space-y-6">
-                    <div class="form-control">
-                        <label class="label" for="name">
-                            <span class="label-text">Name</span>
-                        </label>
-                        <input id="name" type="text" placeholder="Your name" class="input input-bordered" required />
-                    </div>
-                    <div class="form-control">
-                        <label class="label" for="email">
-                            <span class="label-text">Email</span>
-                        </label>
-                        <input id="email" type="email" placeholder="you@example.com" class="input input-bordered" required />
-                    </div>
-                    <div class="form-control">
-                        <label class="label" for="message">
-                            <span class="label-text">How can we help?</span>
-                        </label>
-                        <textarea id="message" class="textarea textarea-bordered" rows="5" placeholder="Share your goals..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-base-200">
-        <div class="footer mx-auto max-w-6xl items-center justify-between px-6 py-10 text-base-content/80">
-            <aside>
-                <a class="btn btn-ghost text-2xl font-bold" href="#home">Internship Ally</a>
-                <p>Empowering future professionals through meaningful internship experiences.</p>
-            </aside>
-            <nav class="grid gap-2">
-                <a class="link link-hover" href="#services">Services</a>
-                <a class="link link-hover" href="#reviews">Reviews</a>
-                <a class="link link-hover" href="#faq">FAQ</a>
-                <a class="link link-hover" href="#contact">Contact</a>
-            </nav>
-            <nav class="grid gap-2">
-                <a class="link link-hover" href="mailto:hello@internshipally.com">hello@internshipally.com</a>
-                <a class="link link-hover" href="tel:+1234567890">(123) 456-7890</a>
-                <a class="link link-hover" href="https://calendly.com/" target="_blank" rel="noopener">Book a Call</a>
-            </nav>
-        </div>
-        <div class="bg-base-300 py-4 text-center text-sm text-base-content/60">
-            © <span id="year"></span> Internship Ally. All rights reserved.
-        </div>
-    </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-</body>
+        <script>
+            document.getElementById("year").textContent =
+                new Date().getFullYear();
+        </script>
+    </body>
 </html>
