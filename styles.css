@@ -60,3 +60,201 @@ header.scrolled {
     backdrop-filter: blur(10px);
     background-color: rgba(var(--color-base-100), 0.8);
 }
+
+/* Hero Banner Animations */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated background gradient */
+.hero-animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, 
+        oklch(22% 0.019 237.69), 
+        oklch(20% 0.019 237.69), 
+        oklch(24% 0.025 240), 
+        oklch(18% 0.019 237.69));
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    z-index: 1;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Floating background elements */
+.floating-element {
+    position: absolute;
+    opacity: 0.05;
+    animation: float 20s infinite linear;
+    z-index: 2;
+}
+
+.floating-element:nth-child(1) { 
+    left: 10%; 
+    animation-delay: 0s; 
+    font-size: 3rem; 
+}
+
+.floating-element:nth-child(2) { 
+    left: 80%; 
+    animation-delay: -5s; 
+    font-size: 2rem; 
+}
+
+.floating-element:nth-child(3) { 
+    left: 60%; 
+    animation-delay: -10s; 
+    font-size: 2.5rem; 
+}
+
+.floating-element:nth-child(4) { 
+    left: 30%; 
+    animation-delay: -15s; 
+    font-size: 1.8rem; 
+}
+
+@keyframes float {
+    0% { 
+        transform: translateY(100vh) rotate(0deg); 
+        opacity: 0; 
+    }
+    10% { 
+        opacity: 0.05; 
+    }
+    90% { 
+        opacity: 0.05; 
+    }
+    100% { 
+        transform: translateY(-100px) rotate(360deg); 
+        opacity: 0; 
+    }
+}
+
+/* Hero content animations */
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+/* Fade in from bottom animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+/* Apply animations to hero elements */
+.hero-title {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.3s forwards;
+}
+
+.hero-subtitle {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+
+.hero-cta {
+    opacity: 0;
+    animation: scaleIn 0.6s ease-out 0.9s forwards;
+}
+
+.hero-cta:hover {
+    animation: pulse 0.3s ease-in-out;
+}
+
+/* Typewriter effect */
+.typewriter {
+    overflow: hidden;
+    border-right: 0.15em solid oklch(74.703% 0.158 39.947);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end) 0.5s forwards, blink-caret 0.75s step-end infinite;
+    width: 0;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: oklch(74.703% 0.158 39.947); }
+}
+
+/* Responsive typewriter */
+@media (max-width: 1024px) {
+    .typewriter {
+        animation: typing 3s steps(35, end) 0.5s forwards, blink-caret 0.75s step-end infinite;
+    }
+}
+
+@media (max-width: 768px) {
+    .typewriter {
+        animation: typing 2.5s steps(30, end) 0.5s forwards, blink-caret 0.75s step-end infinite;
+        white-space: normal;
+        border-right: none;
+    }
+    
+    .floating-element {
+        display: none; /* Hide floating elements on mobile for better performance */
+    }
+}
+
+/* Subtle shadow animation for the hero content */
+.hero-content-wrapper {
+    animation: subtleGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes subtleGlow {
+    from {
+        filter: drop-shadow(0 0 20px rgba(116, 179, 156, 0.1));
+    }
+    to {
+        filter: drop-shadow(0 0 40px rgba(116, 179, 156, 0.2));
+    }
+}
