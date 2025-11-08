@@ -29,7 +29,7 @@ export default function Header() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <a className="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors" href="#header">
+            <a className="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors" href="#home">
               Internship Ally
             </a>
           </motion.div>

@@ -27,13 +27,13 @@ export default function Home() {
 
   return (
     <motion.div
-      id="header"
+      id="home"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
       <Header />
-      <main id="home">
+      <main id="hero">
         <Hero />
         <About />
         <Services />

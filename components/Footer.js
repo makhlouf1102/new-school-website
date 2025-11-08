@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <a className="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors" href="#header">
+            <a className="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors" href="#home">
               Internship Ally
             </a>
             <p className="mt-2 text-gray-600">
