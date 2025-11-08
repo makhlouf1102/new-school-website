@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { motion } from 'framer-motion'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import About from '../components/About'
@@ -25,7 +26,12 @@ export default function Home() {
   }, [])
 
   return (
-    <div id="header">
+    <motion.div
+      id="header"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <Header />
       <main id="home">
         <Hero />
@@ -36,6 +42,6 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-    </div>
+    </motion.div>
   )
 }

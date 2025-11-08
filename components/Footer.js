@@ -1,6 +1,13 @@
+import { useState, useEffect } from 'react'
 import * as Separator from '@radix-ui/react-separator'
 
 export default function Footer() {
+  const [year, setYear] = useState('')
+
+  useEffect(() => {
+    setYear(new Date().getFullYear().toString())
+  }, [])
+
   return (
     <footer className="bg-gray-100">
       <div className="mx-auto max-w-6xl px-6 py-10">
@@ -43,7 +50,7 @@ export default function Footer() {
       </div>
       <Separator.Root className="h-px bg-gray-200" />
       <div className="bg-gray-200 py-4 text-center text-sm text-gray-600">
-        © <span id="year" suppressHydrationWarning></span> Internship Ally. All rights reserved.
+        © {year} Internship Ally. All rights reserved.
       </div>
     </footer>
   )
