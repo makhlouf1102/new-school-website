@@ -1,0 +1,33 @@
+{
+  "name": "new-school-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makhlouf1102/new-school-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/makhlouf1102/new-school-website/issues"
+  },
+  "homepage": "https://github.com/makhlouf1102/new-school-website#readme",
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.0.1"
+  }
+}
