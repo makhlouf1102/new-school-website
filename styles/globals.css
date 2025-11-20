@@ -2,43 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-[data-theme="sunset"] {
-    color-scheme: dark;
-    --color-base-100: oklch(22% 0.019 237.69);
-    --color-base-200: oklch(20% 0.019 237.69);
-    --color-base-300: oklch(18% 0.019 237.69);
-    --color-base-content: oklch(77.383% 0.043 245.096);
-    --color-primary: oklch(74.703% 0.158 39.947);
-    --color-primary-content: oklch(14.94% 0.031 39.947);
-    --color-secondary: oklch(72.537% 0.177 2.72);
-    --color-secondary-content: oklch(14.507% 0.035 2.72);
-    --color-accent: oklch(71.294% 0.166 299.844);
-    --color-accent-content: oklch(14.258% 0.033 299.844);
-    --color-neutral: oklch(26% 0.019 237.69);
-    --color-neutral-content: oklch(70% 0.019 237.69);
-    --color-info: oklch(85.559% 0.085 206.015);
-    --color-info-content: oklch(17.111% 0.017 206.015);
-    --color-success: oklch(85.56% 0.085 144.778);
-    --color-success-content: oklch(17.112% 0.017 144.778);
-    --color-warning: oklch(85.569% 0.084 74.427);
-    --color-warning-content: oklch(17.113% 0.016 74.427);
-    --color-error: oklch(85.511% 0.078 16.886);
-    --color-error-content: oklch(17.102% 0.015 16.886);
-    --radius-selector: 1rem;
-    --radius-field: 0.5rem;
-    --radius-box: 1rem;
-    --size-selector: 0.25rem;
-    --size-field: 0.25rem;
-    --border: 1px;
-    --depth: 0;
-    --noise: 0;
-}
-
-/* Smooth scrolling for the entire page */
-html {
-    scroll-behavior: smooth;
-}
-
 /* Optional: Add scroll padding to account for the sticky header */
 html {
     scroll-padding-top: 80px;
@@ -338,36 +301,201 @@ header.scrolled {
         filter: drop-shadow(0 0 20px oklch(var(--p) / 0.1));
     }
 
+    90% {
+        opacity: 0.05;
+    }
+
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Hero content animations */
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+/* Fade in from bottom animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+/* Apply animations to hero elements */
+.hero-title {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.3s forwards;
+}
+
+.hero-subtitle-header {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+
+.hero-subtitle {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.9s forwards;
+}
+
+.hero-subtitle-header {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+
+.hero-subtitle {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.9s forwards;
+}
+
+.hero-cta {
+    opacity: 0;
+    animation: scaleIn 0.6s ease-out 1.2s forwards;
+}
+
+.hero-cta .btn {
+    transition: all 0.3s ease;
+}
+
+.hero-cta .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px oklch(var(--p) / 0.3);
+}
+
+/* Remove mobile-specific typewriter styles */
+@media (max-width: 768px) {
+    .floating-element {
+        display: none;
+        /* Hide floating elements on mobile for better performance */
+    }
+}
+
+.hero-cta .btn {
+    transition: all 0.3s ease;
+}
+
+.hero-cta .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px oklch(var(--p) / 0.3);
+}
+
+/* Typewriter effect */
+.typewriter {
+    overflow: hidden;
+    border-right: 0.15em solid oklch(var(--p));
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        fadeInUp 0.8s ease-out 0.3s forwards,
+        typing 3.5s steps(40, end) 0.8s forwards,
+        blink-caret 0.75s step-end infinite 0.8s;
+    width: 0;
+    opacity: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: oklch(var(--p));
+    }
+}
+
+/* Responsive typewriter */
+@media (max-width: 1024px) {
+    .typewriter {
+        animation:
+            fadeInUp 0.8s ease-out 0.3s both,
+            typing 3s steps(40, end) 1.1s both,
+            blink-caret 0.75s step-end infinite 1.1s;
+    }
+}
+
+@media (max-width: 768px) {
+    .typewriter {
+        animation:
+            fadeInUp 0.8s ease-out 0.3s both,
+            typing 2.5s steps(35, end) 1.1s both,
+            blink-caret 0.75s step-end infinite 1.1s;
+        white-space: normal;
+        border-right: none;
+        overflow: visible;
+        width: auto;
+    }
+
+    .floating-element {
+        display: none;
+        /* Hide floating elements on mobile for better performance */
+    }
+}
+
+/* Subtle shadow animation for the hero content */
+.hero-content-wrapper {
+    animation: subtleGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes subtleGlow {
+    from {
+        filter: drop-shadow(0 0 20px oklch(var(--p) / 0.1));
+    }
+
     to {
         filter: drop-shadow(0 0 40px oklch(var(--p) / 0.2));
     }
-}
-
-/* Accordion animations */
-@keyframes accordion-down {
-    from {
-        height: 0;
-    }
-
-    to {
-        height: var(--radix-accordion-content-height);
-    }
-}
-
-@keyframes accordion-up {
-    from {
-        height: var(--radix-accordion-content-height);
-    }
-
-    to {
-        height: 0;
-    }
-}
-
-.animate-accordion-down {
-    animation: accordion-down 0.2s ease-out;
-}
-
-.animate-accordion-up {
-    animation: accordion-up 0.2s ease-out;
 }
