@@ -40,7 +40,7 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="bg-white py-20"
+      className="bg-base-100 py-20"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
@@ -49,10 +49,10 @@ export default function About() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-12 lg:grid-cols-2">
           <motion.div variants={itemVariants}>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-base-content mb-6">
               About Internship Ally
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-base-content/70 leading-relaxed">
               Internship Ally is a boutique service agency
               dedicated to connecting aspiring professionals
               with internships that accelerate their growth.
@@ -66,36 +66,36 @@ export default function About() {
             variants={containerVariants}
           >
             <motion.div
-              className="bg-gray-50 p-6 rounded-lg text-center hover:bg-gray-100 transition-colors duration-200"
+              className="bg-base-200 p-6 rounded-lg text-center hover:bg-base-300 transition-colors duration-200"
               variants={statsVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="text-3xl font-bold text-blue-600 mb-2">250+</div>
-              <div className="text-sm font-medium text-gray-900 mb-1">Internships Secured</div>
-              <div className="text-sm text-gray-600">Across 15 industries</div>
+              <div className="text-3xl font-bold text-primary mb-2">250+</div>
+              <div className="text-sm font-medium text-base-content mb-1">Internships Secured</div>
+              <div className="text-sm text-base-content/70">Across 15 industries</div>
             </motion.div>
 
             <motion.div
-              className="bg-gray-50 p-6 rounded-lg text-center hover:bg-gray-100 transition-colors duration-200"
+              className="bg-base-200 p-6 rounded-lg text-center hover:bg-base-300 transition-colors duration-200"
               variants={statsVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="text-3xl font-bold text-blue-600 mb-2">120</div>
-              <div className="text-sm font-medium text-gray-900 mb-1">Partner Companies</div>
-              <div className="text-sm text-gray-600">Worldwide network</div>
+              <div className="text-3xl font-bold text-primary mb-2">120</div>
+              <div className="text-sm font-medium text-base-content mb-1">Partner Companies</div>
+              <div className="text-sm text-base-content/70">Worldwide network</div>
             </motion.div>
 
             <motion.div
-              className="bg-gray-50 p-6 rounded-lg text-center hover:bg-gray-100 transition-colors duration-200"
+              className="bg-base-200 p-6 rounded-lg text-center hover:bg-base-300 transition-colors duration-200"
               variants={statsVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="text-3xl font-bold text-blue-600 mb-2">92%</div>
-              <div className="text-sm font-medium text-gray-900 mb-1">Success Rate</div>
-              <div className="text-sm text-gray-600">Offers after coaching</div>
+              <div className="text-3xl font-bold text-primary mb-2">92%</div>
+              <div className="text-sm font-medium text-base-content mb-1">Success Rate</div>
+              <div className="text-sm text-base-content/70">Offers after coaching</div>
             </motion.div>
           </motion.div>
         </div>

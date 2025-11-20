@@ -36,10 +36,10 @@ const floatingVariants = {
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative bg-gradient-to-br from-base-200 to-base-300 min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated background */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-pink-400/20"
+        className="absolute inset-0 bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20"
         animate={{
           backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
         }}
@@ -94,19 +94,19 @@ export default function Hero() {
         animate="visible"
       >
         <motion.h1
-          className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+          className="text-4xl md:text-6xl font-bold text-base-content mb-6 leading-tight"
           variants={itemVariants}
         >
           Learn to get internships that suits you in 60 days
         </motion.h1>
         <motion.h2
-          className="text-2xl md:text-3xl font-semibold text-gray-700 mb-6"
+          className="text-2xl md:text-3xl font-semibold text-base-content/80 mb-6"
           variants={itemVariants}
         >
           Getting an internship should not be hard
         </motion.h2>
         <motion.p
-          className="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-base-content/70 mb-10 leading-relaxed"
           variants={itemVariants}
         >
           I will show you everything you need to get one without lying
@@ -116,7 +116,7 @@ export default function Hero() {
           variants={itemVariants}
         >
           <motion.a
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl"
+            className="btn btn-primary btn-lg text-white shadow-lg hover:shadow-xl border-none"
             href="https://calendly.com/"
             target="_blank"
             rel="noopener"

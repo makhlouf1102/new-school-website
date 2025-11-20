@@ -39,7 +39,7 @@ export default function Services() {
   return (
     <motion.section
       id="services"
-      className="bg-gray-50 py-20"
+      className="bg-base-200 py-20"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -53,15 +53,15 @@ export default function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-bold text-gray-900">Our Services</h2>
-          <p className="mt-4 text-lg text-gray-600">
+          <h2 className="text-3xl font-bold text-base-content">Our Services</h2>
+          <p className="mt-4 text-lg text-base-content/70">
             Tailored support packages designed to meet you where
             you are in your career journey.
           </p>
         </motion.div>
         <div className="mt-12 space-y-12">
           <motion.div
-            className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col lg:flex-row hover:shadow-xl transition-shadow duration-300"
+            className="bg-base-100 rounded-lg shadow-lg overflow-hidden flex flex-col lg:flex-row hover:shadow-xl transition-shadow duration-300"
             variants={cardVariants}
             whileHover={{ y: -5 }}
             transition={{ duration: 0.3 }}
@@ -78,15 +78,15 @@ export default function Services() {
               />
             </motion.div>
             <div className="lg:w-1/2 p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Service One</h3>
-              <p className="text-gray-600 mb-6">
+              <h3 className="text-2xl font-bold text-base-content mb-4">Service One</h3>
+              <p className="text-base-content/70 mb-6">
                 Describe the first service offering here.
                 Highlight the benefits and the outcomes
                 clients can expect.
               </p>
               <div className="flex justify-end">
                 <motion.a
-                  className="border border-gray-300 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-50 transition-colors"
+                  className="btn btn-outline btn-primary"
                   href="#contact"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -97,7 +97,7 @@ export default function Services() {
             </div>
           </motion.div>
           <motion.div
-            className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col lg:flex-row-reverse hover:shadow-xl transition-shadow duration-300"
+            className="bg-base-100 rounded-lg shadow-lg overflow-hidden flex flex-col lg:flex-row-reverse hover:shadow-xl transition-shadow duration-300"
             variants={cardVariantsReverse}
             whileHover={{ y: -5 }}
             transition={{ duration: 0.3 }}
@@ -114,15 +114,15 @@ export default function Services() {
               />
             </motion.div>
             <div className="lg:w-1/2 p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Service Two</h3>
-              <p className="text-gray-600 mb-6">
+              <h3 className="text-2xl font-bold text-base-content mb-4">Service Two</h3>
+              <p className="text-base-content/70 mb-6">
                 Describe the second service offering here.
                 Focus on how it solves a specific problem
                 for your clients.
               </p>
               <div className="flex justify-end">
                 <motion.a
-                  className="border border-gray-300 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-50 transition-colors"
+                  className="btn btn-outline btn-primary"
                   href="#contact"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

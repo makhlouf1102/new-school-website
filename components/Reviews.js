@@ -27,7 +27,7 @@ export default function Reviews() {
   return (
     <motion.section
       id="reviews"
-      className="bg-white py-20"
+      className="bg-base-100 py-20"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -41,10 +41,10 @@ export default function Reviews() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-bold text-gray-900">
+          <h2 className="text-3xl font-bold text-base-content">
             Reviews from Previous Clients
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-4 text-lg text-base-content/70">
             Hear from the professionals who found their dream
             internships with us.
           </p>
@@ -54,64 +54,64 @@ export default function Reviews() {
           variants={containerVariants}
         >
           <motion.div
-            className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+            className="bg-base-200 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
             variants={cardVariants}
             whileHover={{ y: -5 }}
             transition={{ duration: 0.3 }}
           >
-            <p className="text-gray-700 italic mb-4">
+            <p className="text-base-content/80 italic mb-4">
               "Internship Ally guided me through every
               step of the application process. I landed an
               internship that turned into a full-time
               offer!"
             </p>
-            <div className="font-semibold text-gray-900">Alexandra T.</div>
-            <div className="text-sm text-gray-600">Marketing Intern, BrightWave Media</div>
+            <div className="font-semibold text-base-content">Alexandra T.</div>
+            <div className="text-sm text-base-content/70">Marketing Intern, BrightWave Media</div>
           </motion.div>
 
           <motion.div
-            className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+            className="bg-base-200 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
             variants={cardVariants}
             whileHover={{ y: -5 }}
             transition={{ duration: 0.3 }}
           >
-            <p className="text-gray-700 italic mb-4">
+            <p className="text-base-content/80 italic mb-4">
               "The mock interviews and resume overhaul
               were game changers. I never felt more
               confident walking into interviews."
             </p>
-            <div className="font-semibold text-gray-900">Jamal R.</div>
-            <div className="text-sm text-gray-600">Software Intern, Apex Labs</div>
+            <div className="font-semibold text-base-content">Jamal R.</div>
+            <div className="text-sm text-base-content/70">Software Intern, Apex Labs</div>
           </motion.div>
 
           <motion.div
-            className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+            className="bg-base-200 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
             variants={cardVariants}
             whileHover={{ y: -5 }}
             transition={{ duration: 0.3 }}
           >
-            <p className="text-gray-700 italic mb-4">
+            <p className="text-base-content/80 italic mb-4">
               "Their employer connections opened doors I
               didn't even know existed. Highly recommend
               to anyone serious about their career."
             </p>
-            <div className="font-semibold text-gray-900">Priya N.</div>
-            <div className="text-sm text-gray-600">Operations Intern, Forward Logistics</div>
+            <div className="font-semibold text-base-content">Priya N.</div>
+            <div className="text-sm text-base-content/70">Operations Intern, Forward Logistics</div>
           </motion.div>
 
           <motion.div
-            className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+            className="bg-base-200 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
             variants={cardVariants}
             whileHover={{ y: -5 }}
             transition={{ duration: 0.3 }}
           >
-            <p className="text-gray-700 italic mb-4">
+            <p className="text-base-content/80 italic mb-4">
               "The personalized guidance made all the
               difference. They helped me choose the right
               internship track for my goals."
             </p>
-            <div className="font-semibold text-gray-900">Diego L.</div>
-            <div className="text-sm text-gray-600">Finance Intern, Summit Capital</div>
+            <div className="font-semibold text-base-content">Diego L.</div>
+            <div className="text-sm text-base-content/70">Finance Intern, Summit Capital</div>
           </motion.div>
         </motion.div>
       </div>

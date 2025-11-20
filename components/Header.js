@@ -16,7 +16,7 @@ const navItemVariants = {
 export default function Header() {
   return (
     <motion.header
-      className="sticky top-0 z-50 bg-white shadow-md border-b"
+      className="sticky top-0 z-50 bg-base-100 shadow-md border-b border-base-300"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -29,7 +29,7 @@ export default function Header() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <a className="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors" href="#home">
+            <a className="text-2xl font-bold text-base-content hover:text-base-content/80 transition-colors" href="#home">
               Internship Ally
             </a>
           </motion.div>
@@ -39,11 +39,11 @@ export default function Header() {
               <NavigationMenu.Item>
                 <motion.div variants={navItemVariants} initial="hidden" animate="visible" transition={{ delay: 0.3 }}>
                   <NavigationMenu.Link
-                    className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors relative group"
+                    className="text-base-content/70 hover:text-base-content px-3 py-2 text-sm font-medium transition-colors relative group"
                     href="#about"
                   >
                     About
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                   </NavigationMenu.Link>
                 </motion.div>
               </NavigationMenu.Item>
@@ -111,7 +111,7 @@ export default function Header() {
 
             </label>
             <motion.a
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors shadow-md hover:shadow-lg"
+              className="btn btn-primary btn-sm text-white shadow-md hover:shadow-lg border-none"
               href="https://calendly.com/"
               target="_blank"
               rel="noopener"

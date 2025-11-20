@@ -28,7 +28,7 @@ export default function FAQ() {
   return (
     <motion.section
       id="faq"
-      className="bg-gray-50 py-20"
+      className="bg-base-200 py-20"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -39,10 +39,10 @@ export default function FAQ() {
           className="text-center"
           variants={itemVariants}
         >
-          <h2 className="text-3xl font-bold text-gray-900">
+          <h2 className="text-3xl font-bold text-base-content">
             Frequently Asked Questions
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-4 text-lg text-base-content/70">
             Click a question to learn more about our process and
             services.
           </p>
@@ -56,12 +56,12 @@ export default function FAQ() {
               variants={itemVariants}
               layout
             >
-              <Accordion.Item value="item-1" className="bg-white rounded-lg shadow-sm border hover:shadow-md transition-all duration-300 group">
+              <Accordion.Item value="item-1" className="bg-base-100 rounded-lg shadow-sm border border-base-300 hover:shadow-md transition-all duration-300 group">
                 <Accordion.Header>
-                  <Accordion.Trigger className="w-full px-6 py-4 text-left text-xl font-medium text-gray-900 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex justify-between items-center transition-colors duration-200">
+                  <Accordion.Trigger className="w-full px-6 py-4 text-left text-xl font-medium text-base-content hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 flex justify-between items-center transition-colors duration-200">
                     How does the internship matching process work?
                     <motion.span
-                      className="ml-4 text-gray-400 group-hover:text-blue-600 transition-colors duration-200"
+                      className="ml-4 text-base-content/40 group-hover:text-primary transition-colors duration-200"
                       whileHover={{ scale: 1.1 }}
                       transition={{ type: "spring", stiffness: 400, damping: 10 }}
                     >
@@ -71,7 +71,7 @@ export default function FAQ() {
                 </Accordion.Header>
                 <Accordion.Content className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
                   <motion.div
-                    className="px-6 pb-4 text-gray-600"
+                    className="px-6 pb-4 text-base-content/70"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.3 }}
@@ -95,7 +95,7 @@ export default function FAQ() {
               variants={itemVariants}
               layout
             >
-              <Accordion.Item value="item-2" className="bg-white rounded-lg shadow-sm border hover:shadow-md transition-all duration-300 group">
+              <Accordion.Item value="item-2" className="bg-base-100 rounded-lg shadow-sm border border-base-300 hover:shadow-md transition-all duration-300 group">
                 <Accordion.Header>
                   <Accordion.Trigger className="w-full px-6 py-4 text-left text-xl font-medium text-gray-900 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex justify-between items-center transition-colors duration-200">
                     Do you help with interview preparation?
@@ -133,7 +133,7 @@ export default function FAQ() {
               variants={itemVariants}
               layout
             >
-              <Accordion.Item value="item-3" className="bg-white rounded-lg shadow-sm border hover:shadow-md transition-all duration-300 group">
+              <Accordion.Item value="item-3" className="bg-base-100 rounded-lg shadow-sm border border-base-300 hover:shadow-md transition-all duration-300 group">
                 <Accordion.Header>
                   <Accordion.Trigger className="w-full px-6 py-4 text-left text-xl font-medium text-gray-900 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex justify-between items-center transition-colors duration-200">
                     Can you support international internship searches?
@@ -172,7 +172,7 @@ export default function FAQ() {
               variants={itemVariants}
               layout
             >
-              <Accordion.Item value="item-4" className="bg-white rounded-lg shadow-sm border hover:shadow-md transition-all duration-300 group">
+              <Accordion.Item value="item-4" className="bg-base-100 rounded-lg shadow-sm border border-base-300 hover:shadow-md transition-all duration-300 group">
                 <Accordion.Header>
                   <Accordion.Trigger className="w-full px-6 py-4 text-left text-xl font-medium text-gray-900 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex justify-between items-center transition-colors duration-200">
                     What is the timeline to get started?
