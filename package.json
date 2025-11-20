@@ -34,7 +34,11 @@
   },
   "homepage": "https://github.com/makhlouf1102/new-school-website#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.22",
+    "daisyui": "^4.12.24",
     "eslint": "^9.39.1",
-    "eslint-config-next": "^16.0.1"
+    "eslint-config-next": "^16.0.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18"
   }
 }

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 [data-theme="sunset"] {
     color-scheme: dark;
     --color-base-100: oklch(22% 0.019 237.69);
