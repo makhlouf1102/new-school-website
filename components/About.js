@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import * as Separator from '@radix-ui/react-separator'
+
 
 const containerVariants = {
   hidden: { opacity: 0 },

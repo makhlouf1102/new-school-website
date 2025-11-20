@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import * as Separator from '@radix-ui/react-separator'
+
 
 export default function Footer() {
   const [year, setYear] = useState('')
@@ -48,7 +48,7 @@ export default function Footer() {
           </nav>
         </div>
       </div>
-      <Separator.Root className="h-px bg-base-300" />
+      <div className="h-px bg-base-300" />
       <div className="bg-base-300 py-4 text-center text-sm text-base-content/70">
         © {year} Internship Ally. All rights reserved.
       </div>
